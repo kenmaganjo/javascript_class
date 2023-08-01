@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="a"></p>
+    <p id="b"></p>
+    <p id="c"></p>
+    <p id="d"></p>
+    <p id="e"></p>
+
+    <script type="text/javascript">
+        // //Quiz 1
+        let name = "  JOHn  .";
+        name = name.trim().toLowerCase().replace(".","");
+        document.getElementById('a').innerHTML = name; 
+        // Quiz 2a
+        let sentence_one = "The dog Breed is German Shepherd";
+        let breed = sentence_one.slice(8, 23);
+        document.getElementById('b').innerHTML = breed;
+        // Quiz 2b
+        let sentence_two = "Defeats for the Cliton forces, this was her moment of triumph";
+        let cliton = sentence_two.slice(16, 29);
+        document.getElementById('c').innerHTML = cliton;
+        // Quiz 3
+        let sentence = "The lazy dog; ran so fast; it hit the wall.";
+        let x = sentence.split(';');
+        let y = x.length;
+        document.getElementById('d').innerHTML = x;
+        document.getElementById('e').innerHTML = y;
+
+
+    </script>
+    
+</body>
+</html>
