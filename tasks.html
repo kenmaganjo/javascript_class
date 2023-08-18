@@ -11,6 +11,10 @@
     <p id="c"></p>
     <p id="d"></p>
     <p id="e"></p>
+    <p id="f"></p>
+    <p id="g"></p>
+    <p id="h"></p>
+    <p id="i"></p>
 
     <script type="text/javascript">
         // //Quiz 1
@@ -31,6 +35,34 @@
         let y = x.length;
         document.getElementById('d').innerHTML = x;
         document.getElementById('e').innerHTML = y;
+
+
+        let i = "The dog Breed is German Shepherd";
+        let j = sentence_one.slice(-24, -9);
+        document.getElementById('f').innerHTML = j;
+        // checking if a number is between 0 and 100
+        const num = 101;
+        const number = num >= 0 && num <= 100;
+        document.getElementById('g').innerHTML = number;
+        // checking email
+        const email = "example@example.com";
+        const atIndex = email.indexOf('@');
+        const dotIndex = email.lastIndexOf('.');
+        const isValid = atIndex > 0 && dotIndex > atIndex && dotIndex < email.length - 1;
+        document.getElementById('h').innerHTML = isValid;
+        // checking phone number
+        const phoneNumber = "0712345678"; // Change this to test different phone numbers
+        const normalizedPhoneNumber = phoneNumber.replace(/[\s+]/g, ''); // Remove spaces and "+" sign
+        const firstDigit = normalizedPhoneNumber.charAt(0);
+        const isValidKenyanPhoneNumber = (normalizedPhoneNumber.length === 12) && (['254', '7', '1'].includes(firstDigit));
+
+        document.getElementById('i').innerHTML = isValidKenyanPhoneNumber;
+
+
+
+
+
+
 
 
     </script>

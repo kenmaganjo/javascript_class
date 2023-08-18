@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="a"></p>
+    <p id="b"></p>
+    <p id="c"></p>
+    <p id="d"></p>
+    
+
+    <script type="text/javascript">
+      let result = [];
+      for (let i = 0; i <= 500; i++) {
+        if (i % 7 == 0 && i % 5 == 0) {
+          result.push(i);
+        }
+      }
+      document.getElementById('a').innerHTML = result;
+    </script>
+    <script type="text/javascript">
+        let numbers = [];
+        for (let i = 0; i <= 500; i++) {
+          if (i >= 20 && i <= 80) {
+            numbers.push(i);
+          }
+        }
+        document.getElementById('b').innerHTML = numbers;
+      </script>
+      
+      <script type="text/javascript">
+        let divisibleBySeven = [];
+        for (let i = 0; i <= 500; i++) {
+          if (i >= 20 && i <= 80 && i%7 == 0) {
+            divisibleBySeven.push(i);
+          }
+        }
+        document.getElementById('c').innerHTML = divisibleBySeven;
+      </script>
+      
+    
+    
+    
+    
+
+    
+</body>
+</html>

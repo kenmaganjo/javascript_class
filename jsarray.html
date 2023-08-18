@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="a"></p>
+    <p id="b"></p>
+    <p id="c"></p>
+    <p id="d"></p>
+    
+
+    
+    <script type="text/javascript">
+
+    let myArray = ["red", "green", "blue"]
+    document.getElementById('a').innerHTML = myArray;
+    </script>
+    <script type="text/javascript">
+
+        let array = ["orange", "banana", "apple", "passion"];
+        array[1] = "pears"
+        document.getElementById('b').innerHTML = array;
+    </script>
+     <script type="text/javascript">
+
+        let numbers = [2,8,7,6,15,9];
+        let lengthOfNumbers = numbers.length
+      document.getElementById('c').innerHTML = lengthOfNumbers;
+    </script>
+     <script type="text/javascript">
+
+        let languages = ['spanish','english','chinese','kiswahili'];
+        let newLanguages = languages.pop()
+        document.getElementById('d').innerHTML = languages;
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="a"></p>
+    <p id="b"></p>
+    <p id="c"></p>
+    <script type="text/javascript">
+        // arithmetic operators
+        let num1 = 5;
+        let num2 = 7;
+        document.getElementById('a').innerHTML = num2%num1; 
+        // conditional operators
+        document.getElementById('b').innerHTML = num2>num1;
+        // logical operators - checks multiple conditions
+        // && - all conditions have to be true 
+        // || - at least one condtion has to be true
+        document.getElementById('c').innerHTML = num2>num1 && num1<num2 || num2>18;
+
+    </script>
+    
+</body>
+</html>

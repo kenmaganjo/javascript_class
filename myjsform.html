@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My JavaScript Form</title>
+    <style>
+        table {
+            border-collapse: collapse;
+          
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+        form label {
+            display: inline-block;
+            width: 100px; 
+        }
+        form input[type="text"],
+        form input[type="email"] {
+            width: 200px; 
+        }
+    </style>
+</head>
+<body>
+    <form id="myForm">
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name" required>
+        <br><br>
+
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name" required>
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+    <br>
+
+    <div id="error"></div>
+
+    <table id="outputTable">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+        </tr>
+    </table>
+
+    <script src="myform.js"></script>
+</body>
+</html>

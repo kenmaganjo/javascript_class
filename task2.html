@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="a"></p>
+    <p id="b"></p>
+    <p id="c"></p>
+    
+   <!-- checking if a number is even or odd number -->
+    <script type="text/javascript">
+       let num = prompt("Please enter a number: ");
+       function evenOrOdd(){
+        if (num%2==0){
+            return "Even Number";
+        }
+        else if (num%2!=0){
+            return "Odd Number";
+        }
+        
+       }
+        document.getElementById('a').innerHTML = evenOrOdd();   
+    </script>
+
+    <!-- checking the largest number -->
+    <script type="text/javascript">
+        let a = prompt("Enter the 1st number: ");
+        let b = prompt("Enter the 2nd number: ");
+        let c = prompt("Enter the 3rd number: ");
+        function largestNumber(){
+            if (a>b && a>c){
+                return a;
+            }
+            else if (b>a && b>c){
+                return b;
+            }
+            else{
+                return c;
+            }  
+        }
+        let largest = largestNumber();
+       document.getElementById('b').innerHTML = largestNumber();
+    </script>
+    <!-- Checking if year is a leap year -->
+    <script type="text/javascript">
+        let year = prompt("Enter a year: ");
+     
+        function leapYear(){
+            if (year%4==0 && year%100!=0 || year%400==0){
+                return "leap";
+            }
+            else{
+                return "not leap";
+            } 
+        }
+        let leap = leapYear();
+        document.getElementById('c').innerHTML = leapYear();
+    </script> 
+</body>
+</html>
